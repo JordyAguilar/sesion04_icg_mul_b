@@ -1,0 +1,32 @@
+<! - Ejercicio: Dibujar dos líneas de diferente color sobre un elemento HTML canvas. ->
+
+<! DOCTYPE html >
+< html  lang = " es " >
+< cabeza >
+	< meta  charset = " UTF-8 " >
+	< meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+	< título > Ejercicio </ título >
+</ cabeza >
+< cuerpo >
+	< canvas  id = " lineas " width = " 600px " height = " 600px " style = " border: 2px solid gray; " > </ canvas >
+
+	< guión >
+		ventana . addEventListener ( 'cargar' ,  ( )  =>  {
+			dejar  canvasLineas  =  documento . getElementById ( 'lineas' ) ;
+			deje  ctx  =  canvasLineas . getContext ( '2d' ) ;
+
+			ctx . beginPath ( ) ;
+			ctx . strokeStyle  =  'carmesí' ;
+			ctx . moveTo ( 60 ,  60 ) ;
+			ctx . lineTo ( 300 ,  60 ) ;
+			ctx . trazo ( ) ;
+
+			ctx . beginPath ( ) ;
+			ctx . strokeStyle  =  'verde' ;
+			ctx . moveTo ( 60 ,  60 ) ;
+			ctx . lineTo ( 300 ,  300 ) ;
+			ctx . trazo ( ) ;
+		} ) ;
+	</ script >
+</ cuerpo >
+</ html > 
