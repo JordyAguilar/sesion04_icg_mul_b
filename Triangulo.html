@@ -1,0 +1,36 @@
+<! DOCTYPE html >
+< html  lang = " es " >
+< cabeza >
+	< meta  charset = " UTF-8 " >
+	< meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+	< título > Ejercicio 514 </ título >
+</ cabeza >
+< cuerpo >
+	< canvas  id = " lineas " width = " 150px " height = " 150px " style = " border: 2px solid blue; " > </ canvas >
+
+	< guión >
+		ventana . addEventListener ( 'cargar' ,  ( )  =>  {
+			dejar  canvasLineas  =  documento . getElementById ( 'lineas' ) ;
+			deje  ctx  =  canvasLineas . getContext ( '2d' ) ;
+
+			ctx . beginPath ( ) ;
+			ctx . strokeStyle  =  'rojo' ;
+			ctx . moveTo ( 200 ,  95 ) ;
+			ctx . lineTo ( 90 ,  300 ) ;
+			ctx . trazo ( ) ;
+
+			ctx . beginPath ( ) ;
+			ctx . strokeStyle  =  'azul' ;
+			ctx . moveTo ( 200 ,  95 ) ;
+			ctx . lineTo ( 250 ,  300 ) ;
+			ctx . trazo ( ) ;
+
+			ctx . beginPath ( ) ;
+			ctx . strokeStyle  =  'gris' ;
+			ctx . moveTo ( 250 ,  300 ) ;
+			ctx . lineTo ( 90 ,  300 ) ;
+			ctx . trazo ( ) ;
+		} ) ;
+	</ script >
+</ cuerpo >
+</ html > 
